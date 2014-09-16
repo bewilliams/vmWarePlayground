@@ -1,2 +1,2 @@
-ESXi/config/**
-vSphere/config/**
+/ESXi/config/*
+/vSphere/config/*

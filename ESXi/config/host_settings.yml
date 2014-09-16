@@ -1,5 +1,0 @@
-host_credentials:
-  host: 192.1.2.3 #host IP or name
-  user: root #root or username
-  password: password #user's password
-  insecure: true #false requires installing certificates
