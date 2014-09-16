@@ -12,8 +12,8 @@ def find_folder (root_object, path) #root is the root vm folder
 end
 
 #import settings
-app_settings = YAML.load_file('config/vsphere_settings.yml')
-credentials = app_settings.fetch("vsphere_credentials")
+app_settings = YAML.load_file('config/settings.yml')
+credentials = app_settings.fetch("credentials")
 
 #login to vsphere
 vim = RbVmomi::VIM.connect host: credentials["host"], user: credentials["user"], password: credentials["password"] , insecure: credentials["insecure"]

@@ -1,4 +1,4 @@
-/ESXi/config/*
-/vSphere/config/*
+/ESXi/config/settings.yml
+/vSphere/config/settings.yml
 /Gemfile.lock
 /.idea

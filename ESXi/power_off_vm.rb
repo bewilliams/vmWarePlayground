@@ -2,8 +2,8 @@ require 'rbvmomi'
 require 'yaml'
 
 #import settings
-app_settings = YAML.load_file('config/host_settings.yml')
-credentials = app_settings.fetch("host_credentials")
+app_settings = YAML.load_file('config/settings.yml')
+credentials = app_settings.fetch("credentials")
 
 #login to vsphere
 vim = RbVmomi::VIM.connect host: credentials["host"], user: credentials["user"], password: credentials["password"] , insecure: credentials["insecure"]
