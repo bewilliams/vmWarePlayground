@@ -1,2 +1,3 @@
 /ESXi/config/*
 /vSphere/config/*
+/Gemfile.lock
