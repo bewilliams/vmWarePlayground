@@ -17,7 +17,7 @@ dc = rootFolder.childEntity.grep(RbVmomi::VIM::Datacenter).find { |x| x.name == 
 #find the vm
 vm = dc.vmFolder.childEntity.grep(RbVmomi::VIM::VirtualMachine).find { |x| x.name == "nothere" } or fail "VM not found"
 
-#power off the VM
+#power on the VM
 task = vm.PowerOnVM_Task
 
 #wait for the task to complete
