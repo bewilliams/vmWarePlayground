@@ -18,7 +18,7 @@ dc = rootFolder.childEntity.grep(RbVmomi::VIM::Datacenter).find { |x| x.name == 
 vm = dc.vmFolder.childEntity.grep(RbVmomi::VIM::VirtualMachine).find { |x| x.name == "nothere" } or fail "VM not found"
 
 #power off the VM
-task = vm.PowerOffVM_Task
+task = vm.PowerOnVM_Task
 
 #wait for the task to complete
 filter = vim.propertyCollector.CreateFilter(
